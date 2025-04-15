@@ -14,7 +14,7 @@ domain to the respective user/group in the target domain.
 ### Migrate the server to the new domain
 
 Your VisualSVN server has been migrated to the target domain already i.e. using
-the Quest migration tool. The swcxript should also work if you did no migration
+the Quest migration tool. The script should also work if you did no migration
 but just a domain join in the new domain.
 
 ### Prepare source and target users
@@ -48,7 +48,7 @@ Get-ADObject -Filter { extensionattribute1 -like '*' } -Properties samaccountnam
 
 This will get all ADObjects (users and groups) where my extensionattribute is
 set (so I am skipping data I do not need or want) putting it in a csv file I
-can user as a map to match permissions.
+can use as a map to match permissions.
 
 ### Check Powershell modules are available
 
